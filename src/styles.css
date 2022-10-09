@@ -1,0 +1,35 @@
+:root {
+  --tw-gradient-to: #9333ea;
+  --tw-gradient-from: #6ee7b7;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --black: rgb(18 18 18);
+  --grey: rgb(53, 53, 53);
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black, black);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.heading {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.heading em {
+  background: linear-gradient(to right, var(--tw-gradient-stops));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.books_list {
+  max-width: 600px;
+  margin: auto;
+}
